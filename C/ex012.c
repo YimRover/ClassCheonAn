@@ -9,7 +9,7 @@ int main ()
 {
     char ch1 = 'A';
     char ch2 = 65;
-    const char * str = "ABCD\0EFG"; // \0이 들어가면 출력이 끊기는 현상 발생
+    const char * str = "ABCDEFG\0"; // \이 들어가야 그 뒤를 안 읽음
     printf ("아스키문자변화 숫자 : %d\r\n", ch1);
     printf ("아스키문자변화 문자 : %c\r\n", ch1);
     printf ("아스키문자변화 숫자 : %d\r\n", ch2);
